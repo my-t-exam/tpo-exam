@@ -1,42 +1,12 @@
 const questions = [
   {
-    question: "Khi viết báo cáo có nhiều người, thứ tự đúng theo TPO Nhật là?",
-    options: {
-      A: "Người xử lý chính trước",
-      B: "Theo thứ tự phát biểu",
-      C: "Cấp dưới → cấp trên",
-      D: "Cấp trên → cấp dưới"
-    },
-    answer: "D"
-  },
-  {
-    question: "Task > 2 tiếng, cách báo cáo đúng là?",
-    options: {
-      A: "Chỉ báo cáo khi xong",
-      B: "Chỉ báo cáo khi có lỗi",
-      C: "Báo cáo nhận task + tiến độ + kết quả",
-      D: "Không cần báo cáo giữa chừng"
-    },
-    answer: "C"
-  },
-  {
-    question: "Khi trả lời khách hàng qua chat nên?",
-    options: {
-      A: "Ngắn nhất có thể",
-      B: "Lịch sự + rõ ràng + next action",
-      C: "Theo cách đồng nghiệp",
-      D: "Chỉ cần lịch sự"
-    },
+    question: "Test câu hỏi 1: 1+1 = ?",
+    options: { A: "1", B: "2", C: "3", D: "4" },
     answer: "B"
   },
   {
-    question: "Khi nào KHÔNG dùng お疲れ様です?",
-    options: {
-      A: "Email khách hàng",
-      B: "Chat nội bộ",
-      C: "Báo cáo leader",
-      D: "Slack công ty"
-    },
+    question: "Test câu 2: Capital of Vietnam?",
+    options: { A: "Hanoi", B: "Tokyo", C: "Seoul", D: "Bangkok" },
     answer: "A"
   }
 ];

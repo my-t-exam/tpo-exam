@@ -2,29 +2,28 @@ const quizDiv = document.getElementById("quiz");
 const resultDiv = document.getElementById("result");
 const submitBtn = document.getElementById("submitBtn");
 
-// render câu hỏi
+console.log("app.js loaded");
+console.log("questions:", questions);
+
 function renderQuiz() {
-  questions.forEach((q, index) => {
+  quizDiv.innerHTML = "";
+
+  questions.forEach((q, i) => {
     const div = document.createElement("div");
-    div.className = "question";
-
-    let html = `<h3>${index + 1}. ${q.question}</h3>`;
-
-    for (let key in q.options) {
-      html += `
-        <label class="option">
-          <input type="radio" name="q${index}" value="${key}">
+    div.innerHTML = `
+      <h3>${i + 1}. ${q.question}</h3>
+      ${Object.keys(q.options).map(key => `
+        <label>
+          <input type="radio" name="q${i}" value="${key}">
           ${key}. ${q.options[key]}
-        </label>
-      `;
-    }
-
-    div.innerHTML = html;
+        </label><br>
+      `).join("")}
+      <hr>
+    `;
     quizDiv.appendChild(div);
   });
 }
 
-// chấm điểm
 function submitQuiz() {
   let score = 0;
 
@@ -35,9 +34,9 @@ function submitQuiz() {
     }
   });
 
-  resultDiv.innerHTML = `✅ Bạn đúng: ${score} / ${questions.length}`;
+  resultDiv.innerHTML = `Bạn đúng: ${score}/${questions.length}`;
 }
 
-submitBtn.addEventListener("click", submitQuiz);
+submitBtn.onclick = submitQuiz;
 
 renderQuiz();
