@@ -1,90 +1,42 @@
 const questions = [
   {
-    category: "Giao tiếp Chat",
-    question: "Khi viết báo cáo/email có nhiều người, thứ tự đúng theo TPO Nhật là?",
+    question: "Khi viết báo cáo có nhiều người, thứ tự đúng theo TPO Nhật là?",
     options: {
-      A: "Ghi người xử lý chính trước",
-      B: "Ghi theo thứ tự phát biểu",
+      A: "Người xử lý chính trước",
+      B: "Theo thứ tự phát biểu",
       C: "Cấp dưới → cấp trên",
       D: "Cấp trên → cấp dưới"
     },
     answer: "D"
   },
   {
-    category: "Giao tiếp Chat",
-    question: "Khi report tiến độ cho nhiều người, cách mention đúng là?",
-    options: {
-      A: "Sếp → subleader → người giao việc",
-      B: "Người giao việc → subleader → sếp",
-      C: "Người giao việc trước, sau đó CC sếp + subleader",
-      D: "Sếp → subleader → người giao việc"
-    },
-    answer: "C"
-  },
-  {
-    category: "Nhận task",
-    question: "Task >2h, cách báo cáo đúng là?",
+    question: "Task > 2 tiếng, cách báo cáo đúng là?",
     options: {
       A: "Chỉ báo cáo khi xong",
-      B: "Chỉ báo cáo khi có vấn đề",
+      B: "Chỉ báo cáo khi có lỗi",
       C: "Báo cáo nhận task + tiến độ + kết quả",
-      D: "Báo cáo từng bước cực chi tiết"
+      D: "Không cần báo cáo giữa chừng"
     },
     answer: "C"
   },
   {
-    category: "Giao tiếp Chat",
-    question: "Khi nào KHÔNG dùng お疲れ様です?",
-    options: {
-      A: "Email khách hàng",
-      B: "Báo cáo leader",
-      C: "Chat đồng nghiệp",
-      D: "Slack nội bộ"
-    },
-    answer: "A"
-  },
-  {
-    category: "Giao tiếp Chat",
     question: "Khi trả lời khách hàng qua chat nên?",
     options: {
       A: "Ngắn nhất có thể",
-      B: "Lịch sự + rõ + next action",
-      C: "Theo đồng nghiệp",
+      B: "Lịch sự + rõ ràng + next action",
+      C: "Theo cách đồng nghiệp",
       D: "Chỉ cần lịch sự"
     },
     answer: "B"
   },
   {
-    category: "Văn hóa họp",
-    question: "Trước khi họp khách hàng bạn nên?",
+    question: "Khi nào KHÔNG dùng お疲れ様です?",
     options: {
-      A: "Chuẩn bị nội dung + câu hỏi + phương án",
-      B: "Chuẩn bị sơ qua",
-      C: "Vào họp rồi ứng biến",
-      D: "Chỉ chuẩn bị nội dung nói"
+      A: "Email khách hàng",
+      B: "Chat nội bộ",
+      C: "Báo cáo leader",
+      D: "Slack công ty"
     },
     answer: "A"
-  },
-  {
-    category: "Self management",
-    question: "Chọn đúng về self-management?",
-    options: {
-      A: "Tâm trạng xấu cũng được",
-      B: "Thức khuya hôm sau không tập trung là bình thường",
-      C: "Chỉ cần đi làm là được",
-      D: "Luôn giữ 100% thể chất + tinh thần"
-    },
-    answer: "D"
-  },
-  {
-    category: "Vision",
-    question: "Chọn phương án sai về DYM Vietnam vision",
-    options: {
-      A: "BPO No.1 + 600 người 2029",
-      B: "Client first",
-      C: "Thực lực chủ nghĩa",
-      D: "Thay đổi xã hội lớn nhất thế giới"
-    },
-    answer: "D"
   }
 ];
